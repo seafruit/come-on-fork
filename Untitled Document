@@ -1,9 +1,21 @@
 首先，我们需要fork一个项目从别人的git中，获取地址1
 然后 git clone 地址1
-修改文件后上传 
+修改文档后上传 
 git add .
 git status
 git commit -m '描述信息，最好用英文'
 git push
+添加文档后上传
+rm -rf .git
+git init
+git remote add origin url
+git add ./文件名
+git commit -m 'modified'
+git push origin master
+if(! [rejected]        master -> master (fetch first))
+	git push origin master -f
+
+
+
 
 
